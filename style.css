@@ -1,188 +1,14 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-body {
-  height: 100vh;
-  background: url("bg.jpg") no-repeat center center/cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.container {
-  width: 750px;
-  height: 420px;
-  display: flex;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(8px);
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-/* Login section */
-.login-box {
-  width: 40%;
-  background: #fff;
-  padding: 40px 30px;
-}
-
-.login-box h2 {
-  margin-bottom: 20px;
-  color: #003366;
-}
-
-.login-box input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-}
-
-.login-box button {
-  width: 100%;
-  padding: 10px;
-  background: #003366;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-.login-box button:hover {
-  background: #0055aa;
-}
-
-.forgot {
-  display: block;
-  font-size: 12px;
-  margin-bottom: 15px;
-  color: #0055aa;
-  text-decoration: none;
-}
-
-/* Welcome section */
-.welcome-box {
-  width: 60%;
-  color: white;
-  padding: 80px 40px;
-  background: rgba(0, 0, 0, 0.3);
-}
-
-.welcome-box h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-.welcome-box p {
-  font-size: 14px;
-  line-height: 1.5;
-}
-body {
-  background: #f2f2f2;
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.register-container {
-  background: white;
-  width: 350px;
-  padding: 30px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.body {
-  font-family: Arial, sans-serif;
-  background: #f5f7fb;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-/* Main box */
-.register-box {
-  width: 360px;
-  border: 2px solid #1e90ff;   /* blue line border */
-  padding: 20px;
-  background: white;
-}
-
-/* Title */
-.register-box h2 {
-  text-align: center;
-  margin-bottom: 5px;
-}
-
-.subtitle {
-  text-align: center;
-  font-size: 13px;
-  color: #555;
-  margin-bottom: 15px;
-}
-
-/* List layout */
-.register-box ul {
-  list-style: none;
-  padding: 0;
-}
-
-.register-box li {
-  margin-bottom: 12px;
-}
-
-/* Labels & inputs */
-label {
-  font-size: 13px;
-  display: block;
-  margin-bottom: 4px;
-}
-
-input {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-}
-
-/* Button */
-button {
-  width: 100%;
-  padding: 9px;
-  background: #1e90ff;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #0f6fd1;
-}
-
-/* Login text */
-.login-text {
-  text-align: center;
-  margin-top: 10px;
-  font-size: 13px;
-}
-
-.login-text a {
-  color: #1e90ff;
-  text-decoration: none;
-}
+/* ===== RESET ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* ===== BODY ===== */
 body {
   font-family: 'Poppins', sans-serif;
+  background: #fff;
 }
 
 /* ===== HEADER ===== */
@@ -192,20 +18,21 @@ header {
   align-items: center;
   padding: 20px 60px;
   background: white;
+  flex-wrap: wrap;
 }
 
 .logo {
   font-family: 'Cinzel', serif;
-  font-size: 40px;
+  font-size: 36px;
   background: linear-gradient(45deg, purple, violet, gold);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+/* NAVIGATION */
 nav {
   display: flex;
   gap: 25px;
-  align-items: center;
 }
 
 nav a {
@@ -220,37 +47,34 @@ nav a:hover {
   color: purple;
 }
 
-
 /* ===== HERO SECTION ===== */
 .hero {
-  height: 90vh;
+  min-height: 90vh;
   background: url("Minerals.jpg") center/cover no-repeat;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 40px 20px;
 }
 
 .overlay {
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.6);
   padding: 60px;
   text-align: center;
   color: white;
   border-radius: 10px;
+  max-width: 700px;
 }
 
 .overlay h2 {
   font-family: 'Cinzel', serif;
-  font-size: 48px;
-  letter-spacing: 4px;
+  font-size: 42px;
   margin-bottom: 20px;
-  color: #ffffff;
 }
 
 .overlay p {
   font-size: 18px;
   margin-bottom: 30px;
-  max-width: 600px;
 }
 
 .btn {
@@ -266,59 +90,64 @@ nav a:hover {
 .btn:hover {
   background: linear-gradient(45deg, gold, orange);
 }
-/* ===== MOBILE FIX ===== */
+
+/* ===== CONTACT SECTION ===== */
+.contact-section {
+  background: #f5f5f5;
+  padding: 50px 20px;
+}
+
+.contact-container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.contact-box h2 {
+  font-family: 'Cinzel', serif;
+}
+
+.contact-box h3 {
+  margin-bottom: 10px;
+}
+
+.contact-box p {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
 
-  body {
-    margin: 0;
-  }
-
-  .container,
-  .hero,
-  .main-section {
-    flex-direction: column !important;
-    grid-template-columns: 1fr !important;
-    width: 100% !important;
-  }
-
-  .left-section {
-    display: none; /* hide empty left side */
-  }
-
-  .right-section {
-    width: 100% !important;
-  }
-
-  .hero-content {
-    width: 90%;
-    margin: auto;
+  header {
+    padding: 20px;
     text-align: center;
   }
 
+  .logo {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
   nav {
-    display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 15px;
   }
 
-.hero {
-  height: 100vh;
-  background: url("images/minerals.jpg") center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  .overlay {
+    padding: 30px;
+  }
+
+  .overlay h2 {
+    font-size: 28px;
+  }
+
+  .overlay p {
+    font-size: 15px;
+  }
+
 }
-
-.overlay {
-  background: rgba(0,0,0,0.6);
-  padding: 30px;
-  border-radius: 12px;
-  text-align: center;
-  color: white;
-  width: 90%;
-  max-width: 400px;
-}
-
-
-
-
